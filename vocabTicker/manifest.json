@@ -1,0 +1,21 @@
+{
+  "name": "Vocab-Ticker",
+  "version": "1.0.0",
+  "description": "Helps you to build your English Vocabulary while surfing Internet. More than 5000 esoteric words along with their meanings.",
+  "permissions": [
+    "tabs","http://swapnilnawale.com/*"
+  ],
+  "icons": {
+    "48" : "sample-48.png",
+    "128" : "sample-128.png"
+  },
+  "background_page" : "background.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js" : ["jquery-1.6.1.min.js","contentscript.js"]
+    }
+  ],
+ "options_page": "options.html"
+
+}

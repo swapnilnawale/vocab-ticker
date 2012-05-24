@@ -1,0 +1,156 @@
+#if_tab2 div {
+    margin-bottom:5px;  
+    clear:both;
+    color:#000;
+    font-family:  arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size:13px;
+    margin-bottom:10px;
+
+}
+#if_tab2 div label {
+    display:block;  
+    width:100%;
+    font-size:13px;
+    margin:0 0 4px 0;
+    
+}
+#if_tab2 div input[type=text], #if_tab2 textarea , #if_tab2 select {
+    background:#fff;
+    border:#000 1px solid;
+    color:#000;    
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+   
+}
+
+#if_tab2 div input[type=text] ,#if_tab2 select {
+    height:24px;    
+    width:180px;
+    padding:0 60px 0 0;
+    font-family:  arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+	-webkit-border-radius: 5px;
+
+}
+#if_tab2 div textarea {
+    height:96px;
+    width:493px;
+    margin:0;
+    padding:0;
+    font-family:  arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+#if_tab2 div input[type=text]:hover, #if_tab2textarea:hover , #if_tab2 select {
+    border:1px solid #666;
+    background:#fff;
+}
+#if_tab2 div input[type=text]:focus {
+    background:#fff;
+    outline:none;
+    border:#35a5e5 1px solid;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+#if_tab2 textarea:focus {
+    background:#fff;
+    outline:none;
+    border:#35a5e5 1px solid;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+#if_tab2 select:focus {
+    background:#fff;
+    outline:none;
+    border:#35a5e5 1px solid;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+#if_tab2 div button {
+    height:30px;    
+    width:100px;
+    background:#eeeef1;
+    border:1px solid #666;
+    color:#000;
+    margin:0 0 0 0px;
+    cursor:pointer;
+	-webkit-border-radius: 10px;
+
+}
+#if_tab2 div button:hover {
+    border:1px solid #ccc;
+}
+#if_tab2 div button:focus {
+    background:#eeeef1;
+    outline:none;
+    border:#35a5e5 1px solid;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+.spacerblock1
+{
+  margin:15px auto;
+}
+.spacerblock2
+{
+  margin:5px auto;
+}
+.lineSepBlock
+{
+  border-bottom:1px dotted #fff;
+  display:block;
+  margin-top:15px;
+  margin-bottom:0;
+  width:100%;
+}
+
+#if_tab2 a,#if_tab2 a:active,#if_tab2 a:visited 
+{  
+    color:#ffffff;
+}
+
+.error
+{
+	background-color: red;
+	color:#ffffff;
+	font-family:  arial, sans-serif;
+    	text-rendering: optimizeLegibility;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-border-radius: 5px;
+    	-webkit-border-radius: 5px;
+    	border-radius: 5px;
+    	font-size:12px;	
+} 
+
+.error1
+{
+	background-color: red;
+	color:#ffffff;
+	font-family:  arial, sans-serif;
+    	text-rendering: optimizeLegibility;
+    	-webkit-font-smoothing: antialiased;
+    	font-size:12px;	
+} 
+
+.success
+{
+	background-color: #00C000;
+	color:#ffffff;
+	font-family:  arial, sans-serif;
+    	text-rendering: optimizeLegibility;
+    	-webkit-font-smoothing: antialiased;
+		-webkit-border-radius: 5px;
+    	font-size:12px;	
+} 

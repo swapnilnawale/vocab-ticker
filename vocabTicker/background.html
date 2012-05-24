@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+ * Copyright (c) 2011 Swapnil Nawale. All rights reserved.  
+-->
+<html>
+  <head>
+	<script type="text/javascript" src="data.js"></script>
+  </head>
+  <body>
+    <script>
+		
+		function openTab1(urlToOpen) {
+			chrome.tabs.create({"url":urlToOpen, "selected":true});
+		}
+		
+		function fnGetDomain(url) {
+			
+			return url.match(/:\/\/(.[^/]+)/)[1];
+		}
+
+       function fetchVocab(callback) {
+
+	    chrome.tabs.getSelected(null, function(tab){
+			 var domainName = fnGetDomain(tab.url);			
+
+
+			var indVal = Math.floor(Math.random()*5012) + 1;
+		
+			if(localStorage["fColr"]==undefined)
+			{
+				localStorage["fColr"] ="#ffd700";
+			}
+
+			if(localStorage["tColr"]==undefined)
+			{
+				localStorage["tColr"] ="#000000";
+			}
+
+			if(localStorage["tDisp"]==undefined)
+			{
+				localStorage["tDisp"] ="8";
+			}
+
+			var data = {"posts":[{"index": indVal,"word":wordArray[indVal],"meaning":meaningArray[indVal],"fColr":localStorage["fColr"],"tColr":localStorage["tColr"], "tDisp":localStorage["tDisp"]}]};
+			callback(data);
+		});
+
+		
+	   };
+      
+	  function onRequest(request, sender, callback) {
+		if (request.action == 'fetchVocab') {
+          fetchVocab(callback);
+        }
+		if (request.action == 'openTab1'){
+		   openTab1(request.urltoopen);
+        }		
+    }
+	  
+	  chrome.extension.onRequest.addListener(onRequest);
+	
+    </script>
+  </body>
+</html>

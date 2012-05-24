@@ -1,0 +1,109 @@
+<html>
+<head>
+<br><br>
+	<title>Options for Vocab Ticker</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<script type="text/javascript" src="options.js"></script>
+	<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="jquery.modcoder.excolor.js"></script>
+	<script src="jquery.spinnercontrol.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	$('document').ready(function() {
+		// running ExColor
+		$('#txt1').modcoder_excolor();
+		$('#txt2').modcoder_excolor();
+	});
+	</script>
+</head>
+<body onload="loadOptions()" bgcolor="#bec5cd">
+<center><table id="if_tab2" width="800px" style="border-collapse: collapse; -webkit-border-radius: 10px;-webkit-box-shadow: 10px 10px 5px #888;" bgcolor="#ffffff" >
+<tr><td>&nbsp;</td></tr>
+<tr style="background-color: #ffffff;-webkit-border-radius: 10px;-webkit-box-shadow: 10px 10px 5px #888;">
+<td align="left" colspan="2" style="vertical-align: middle;padding-top:10px;">
+		<div style="-webkit-border-radius: 10px;">
+		<label for="name" style="-webkit-border-radius: 10px;"><center><font size="5">Vocab-Ticker Settings<center></font>
+		</label>		
+		</div> 
+</td>
+
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr style="background-color: #eeeef1;">
+<td align="left" style="padding-top:8px;">
+		<div>
+		<label for="name"><font size="4">&nbsp;Color Preferences</font>
+		</label>		
+		</div> 
+</td>
+<td></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>	
+	<td align="left" width="230px">
+		<div>
+		<label for="name">&nbsp;&nbsp;Background Color 
+		</label>		
+		</div> 
+	</td>
+	<td align="left"><div><input type="text" maxlength="7" name="fColr" id="txt1" readonly="readonly"/>
+	<span class="error" id="nameErr" style="display:none">&nbsp;&nbsp;Choose a color from Picker.&nbsp;&nbsp;</span></div>
+	</td>
+</tr>
+<tr>
+	<td align="left" width="230px">
+		<div><label for="email">&nbsp;&nbsp;Text Color 
+		</label>		
+		</div> 
+	</td>
+	<td align="left"><div><input type="text" maxlength="7" name="tColr" id="txt2" readonly="readonly"/>
+	<span class="error" id="nameErr1" style="display:none">&nbsp;&nbsp;Choose Text color from Picker.&nbsp;&nbsp;</span></div></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr style="background-color: #eeeef1;border:0;">
+<td align="left" style="padding-top:8px;">
+		<div>
+		<label for="name"><font size="4">&nbsp;Text Display Preferences</font>
+		</label>		
+		</div> 
+<td></td>
+</td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>	
+	<td align="left" width="230px">
+		<div>
+		<label for="name">&nbsp;&nbsp;Display Period for a word 
+		</label>		
+		</div> 
+	</td>
+	<td align="left"><div><input type="text" maxlength="7" name="tDisp" id="txt3"/>&nbsp;&nbsp;(Seconds)
+	<span class="error" id="nameErr2" style="display:none">&nbsp;&nbsp;Choose time value between 5-20 seconds.&nbsp;&nbsp;</span></div></td>
+
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td></tr>
+
+<tr>
+	<td align="left" colspan="2">
+	<table width="800px">
+		<tr width="100%">
+			<td align="center">
+				<div><button onclick="saveOptions()">Save</button>&nbsp;&nbsp;
+				<button onclick="eraseOptions()">Reset</button></div>         
+			</td>
+		</tr>
+	</table>
+	</td>
+</tr>
+
+<tr><td>&nbsp;</td></tr>
+<tr><td colspan="2" height="20px"><center>
+<span class="success" id="nameSuc" style="display:none">&nbsp;&nbsp;Options saved successfully.&nbsp;&nbsp;</span></center>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+</center>
+</body>
+</html>
